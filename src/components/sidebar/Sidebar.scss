@@ -1,0 +1,126 @@
+@import "../../app.scss";
+ 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    position: fixed;  
+    z-index: 1000; 
+
+    .bg {
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 400px;
+        background: white;
+        z-index: 900; /* Lower z-index than .sidebar to ensure it's beneath */
+
+        @include mobile{
+            width: 200px;
+        }
+
+        .links {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            a {
+                font-size: 40px;
+                text-decoration: none; /* Optional, for better presentation */
+                color: black; /* Adjust the color if needed */
+                transition: color 0.3s; /* Optional, for hover effect */
+                @include mobile{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; /* Corrected to make it circular */
+        position: fixed;
+        top: 25px;
+        left: 25px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 1100; /* Higher z-index than .sidebar to ensure it's above */
+    }
+}
+
+.hero {
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    position: relative;
+
+    .wrapper {
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+
+        .textContainer {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+
+            h2 {
+                font-size: 30px;
+                color: rebeccapurple;
+                letter-spacing: 10px;
+            }
+            h1 {
+                font-size: 88px;
+            }
+            .buttons {
+                button {
+                    padding: 20px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: white;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    font-weight: 300;
+                }
+            }
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+    .imageContainer {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 800; /* Ensure the hero's image container is below the sidebar */
+    }
+
+    .slidingTextContainer {
+        position: absolute;
+        font-size: 50vh;
+        bottom: -120px;
+        white-space: nowrap;
+        color: #ffffff09;
+        width: 50%;
+        font-weight: bold;
+        z-index: 700; /* Ensure the sliding text is below the sidebar */
+    }
+}
