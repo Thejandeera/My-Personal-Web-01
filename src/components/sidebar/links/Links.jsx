@@ -28,6 +28,7 @@ const Links = () => {
     const items = [
         "Homepage",
         "Education",
+        // "Gpa",
         "Projects",
         "Contact",
         "About",

@@ -26,6 +26,13 @@ const Projects = () => {
       desc: "  Excited to share my latest project! Built a chat web app from scratch using Express.js, MongoDB, Vite, and Tailwind CSS. Check it out and let me know what you think!",
       link:"https://www.linkedin.com/posts/thejandeera-sandeepana-6baa17208_im-happy-to-share-this-chat-web-project-activity-7219626097158545409-cSrN?utm_source=share&utm_medium=member_androidp",
     },
+    {
+      id: 4,
+      title: "Gpa Calculator for CS/SLIIT Students",
+      img: "/gpa.png",
+      desc: "I built a GPA calculator specifically designed for SLIIT Computer Science students. It includes module credits and calculates GPA based on selected grades. Give it a try and let me know your thoughts!",
+      link:"https://thejandeerasandeepana2.netlify.app/gpa",
+    },
     
   ];
 

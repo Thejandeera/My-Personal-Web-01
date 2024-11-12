@@ -6,6 +6,7 @@ import Hero from './components/hero/Hero.jsx';
 import Navbar from './components/navbar/Navbar.jsx';
 import Parallax from './components/parallax/Parallax.jsx';
 import Projects from './components/projects/Projects.jsx';
+import Gpa from './components/gpa/gpa.jsx';
 
 const App = () => {
   return (
@@ -21,6 +22,9 @@ const App = () => {
       <section>
         <Education/>
       </section>
+      {/* <section id="Gpa">
+        <Gpa/>
+      </section> */}
       <section id="Projects">
         <Parallax type="Projects" />
       </section>
@@ -28,6 +32,7 @@ const App = () => {
       <section id="Contact">
         <Contact/>
       </section>
+      
       
     </div>
   );

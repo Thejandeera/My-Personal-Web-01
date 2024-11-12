@@ -1,0 +1,132 @@
+@import "../../app.scss";
+
+.gpa-container {
+    padding-top: 40px;
+    height: 100%;
+    margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(180deg, #111132, #0c0c1d);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+
+  .gpa-hero-section {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #1a1a3b;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 200;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      color: #d0d0d0;
+    }
+
+    .grades-input {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+
+      .module-grade {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.1rem;
+        color: white;
+
+        label {
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+        }
+
+        select {
+          padding: 8px 12px;
+          font-size: 1rem;
+          border-radius: 8px;
+          border: 1px solid gray;
+          background-color: #2a2a4a;
+          color: white;
+          cursor: pointer;
+          outline: none;
+          &:focus {
+            border-color: orange;
+          }
+        }
+      }
+    }
+
+    .calculate-btn {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: orange;
+      color: #111132;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      &:hover {
+        background-color: #ff9f40;
+      }
+    }
+
+    .gpa-result {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      color: #ffdf80;
+    }
+  }
+
+  // Responsive styles for mobile devices
+  @media (max-width: 768px) {
+    padding: 20px;
+
+    .gpa-hero-section {
+      padding: 15px;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .module-grade {
+        font-size: 1rem;
+
+        label {
+          font-size: 1.1rem;
+        }
+
+        select {
+          padding: 6px 10px;
+          font-size: 0.9rem;
+        }
+      }
+
+      .calculate-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+      }
+
+      .gpa-result {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
