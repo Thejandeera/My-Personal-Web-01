@@ -29,6 +29,8 @@
             }
             
             h2{
+                margin-left: 20px;
+                padding-left: 20px;
                 font-size: 30px;
                 color: rebeccapurple;
                 letter-spacing: 10px;
@@ -38,12 +40,14 @@
             }
             h1{
                 font-size: 88px;
+                padding-left: 20px;
                 @include mobile{
                     font-size: 10px;
                 }
             }
             .buttons{
                 button{
+                    margin-left: 20px;
                     padding: 20px;
                     border: 1px solid white;
                     border-radius: 10px;
