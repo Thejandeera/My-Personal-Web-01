@@ -31,7 +31,7 @@ const Links = () => {
         // "Gpa",
         "Projects",
         "Contact",
-        "About",
+        // "About",
         
     ]
     return (
